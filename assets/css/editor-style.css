@@ -1,0 +1,369 @@
+/* ==========================================================================
+   Include variables and mixins
+   ========================================================================== */
+/* ==========================================================================
+   Global CSS variables
+   ========================================================================== */
+:root {
+  --qode-main-color: #f7c600;
+  --qode-header-light-color: #ffffff;
+  --qode-header-light-hover-color: #f7c600;
+  --qode-header-dark-color: #1b1b1b;
+  --qode-header-dark-hover-color: #ffffff;
+}
+
+/* ==========================================================================
+   Typography variables
+   ========================================================================== */
+/* ==========================================================================
+   Transition variables
+   ========================================================================== */
+/* ==========================================================================
+   Box variables
+   ========================================================================== */
+/* ==========================================================================
+   Devices screen size variables
+   ========================================================================== */
+/* ==========================================================================
+   Typography mixins
+   ========================================================================== */
+/* ==========================================================================
+   Typography mixins - end
+   ========================================================================== */
+/* ==========================================================================
+   Menu mixins - begin
+   ========================================================================== */
+/* ==========================================================================
+   Menu mixins - end
+   ========================================================================== */
+/* ==========================================================================
+   Layout mixins - begin
+   ========================================================================== */
+/* ==========================================================================
+   Layout mixins - end
+   ========================================================================== */
+/* ==========================================================================
+   Input fields mixins - begin
+   ========================================================================== */
+/* ==========================================================================
+   Input fields mixins - end
+   ========================================================================== */
+/* ==========================================================================
+   Pagination mixins - begin
+   ========================================================================== */
+/* ==========================================================================
+   Pagination mixins - end
+   ========================================================================== */
+/* ==========================================================================
+   Grid size mixins - begin
+   ========================================================================== */
+/* ==========================================================================
+   Grid size mixins - end
+   ========================================================================== */
+/* ==========================================================================
+   Helper mixins - begin
+   ========================================================================== */
+/* ==========================================================================
+   Helper mixins - end
+   ========================================================================== */
+/* ==========================================================================
+   Clear fix mixin - begin
+   ========================================================================== */
+/* ==========================================================================
+   Clear fix mixin - end
+   ========================================================================== */
+body {
+  font-family: "Sarabun", sans-serif;
+  font-size: 18px;
+  line-height: 1.444em;
+  font-weight: 400;
+  color: #5b5b5b;
+  background-color: #ffffff;
+}
+
+h1 {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: #1b1b1b;
+  font-size: 65px;
+  line-height: 1.107em;
+  margin: 20px 0;
+}
+
+h1 a {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  color: inherit;
+}
+
+h1 a:focus, h1 a:hover {
+  color: var(--qode-main-color);
+}
+
+h2 {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: #1b1b1b;
+  font-size: 45px;
+  line-height: 1.155em;
+  margin: 20px 0;
+}
+
+h2 a {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  color: inherit;
+}
+
+h2 a:focus, h2 a:hover {
+  color: var(--qode-main-color);
+}
+
+h3 {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: #1b1b1b;
+  font-size: 32px;
+  line-height: 1.25em;
+  margin: 20px 0;
+}
+
+h3 a {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  color: inherit;
+}
+
+h3 a:focus, h3 a:hover {
+  color: var(--qode-main-color);
+}
+
+h4 {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: #1b1b1b;
+  font-size: 22px;
+  line-height: 1.181em;
+  margin: 20px 0;
+}
+
+h4 a {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  color: inherit;
+}
+
+h4 a:focus, h4 a:hover {
+  color: var(--qode-main-color);
+}
+
+h5 {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: #1b1b1b;
+  font-size: 17px;
+  line-height: 1.294em;
+  margin: 20px 0;
+}
+
+h5 a {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  color: inherit;
+}
+
+h5 a:focus, h5 a:hover {
+  color: var(--qode-main-color);
+}
+
+h6 {
+  font-family: "Sarabun", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: #1b1b1b;
+  font-size: 15px;
+  line-height: 1.4em;
+  font-weight: 500;
+  margin: 20px 0;
+}
+
+h6 a {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  color: inherit;
+}
+
+h6 a:focus, h6 a:hover {
+  color: var(--qode-main-color);
+}
+
+a,
+p a {
+  color: #1b1b1b;
+  text-decoration: none;
+  transition: color 0.2s ease-out;
+  cursor: pointer;
+}
+
+a:focus, a:hover,
+p a:focus,
+p a:hover {
+  color: var(--qode-main-color);
+}
+
+p {
+  margin: 10px 0;
+}
+
+blockquote {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+  font-family: "Sarabun", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: #1b1b1b;
+  font-size: 32px;
+  line-height: 1.25em;
+  border: none;
+  display: inline-block;
+  min-height: 62px;
+  padding: 0 0 0 115px;
+  position: relative;
+  quotes: none;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 680px) {
+  blockquote {
+    padding: 82px 0 0 0;
+  }
+}
+
+blockquote.wp-block-quote.is-large, blockquote.wp-block-quote.is-style-large {
+  margin: 0;
+  padding: 18px 0 20px 115px;
+}
+
+@media only screen and (max-width: 680px) {
+  blockquote.wp-block-quote.is-large, blockquote.wp-block-quote.is-style-large {
+    padding: 82px 0 0 0;
+  }
+}
+
+blockquote.wp-block-pullquote {
+  padding: 25px 0 25px 115px !important;
+  text-align: center;
+}
+
+blockquote.wp-block-pullquote p {
+  font-size: 28px !important;
+  line-height: 1.6 !important;
+}
+
+blockquote.wp-block-pullquote.alignleft {
+  max-width: 420px;
+}
+
+blockquote.wp-block-pullquote.alignright {
+  max-width: 420px;
+}
+
+blockquote.has-text-align-right {
+  padding: 0 115px 0 0;
+}
+
+blockquote.has-text-align-right:before {
+  left: auto;
+  right: 0;
+}
+
+blockquote:before {
+  background-color: currentColor;
+  content: '';
+  height: 62px;
+  -webkit-mask-image: url('data:image/svg+xml;base64,qodefSVG("quote")');
+          mask-image: url('data:image/svg+xml;base64,qodefSVG("quote")');
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
+  width: 75px;
+}
+
+@media only screen and (max-width: 680px) {
+  blockquote:before {
+    top: 0;
+    transform: translateY(0);
+  }
+}
+
+blockquote > * {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  color: inherit;
+  margin: 0;
+}
+
+blockquote p {
+  margin: 0 !important;
+}
+
+blockquote:after {
+  content: '';
+}
+
+blockquote cite {
+  display: block;
+  margin: 10px 0 0;
+  font-style: normal;
+  font-weight: 400 !important;
+  text-align: inherit !important;
+  text-transform: uppercase !important;
+}
