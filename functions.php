@@ -296,3 +296,11 @@ if ( ! function_exists( 'qodef_var_dump' ) ) {
 		echo '</p>';
 	}
 }
+
+// load core functions
+require_once get_stylesheet_directory() . '/core/load.php';
+
+
+
+
+
