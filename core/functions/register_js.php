@@ -3,6 +3,13 @@ function custom_child_scripts() {
 
 
 	wp_enqueue_style(
+		'solution-selector-block', 
+		CORE_URL . '/css/solution-selector-block.css',
+		array(),
+		rand()
+	);
+	
+	wp_enqueue_style(
 		'custom_core_style', 
 		CORE_URL . '/css/custom_core_style.css',
 		array(),
