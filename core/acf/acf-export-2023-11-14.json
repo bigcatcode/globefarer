@@ -1,0 +1,880 @@
+[
+    {
+        "key": "group_65520cb5d05a5",
+        "title": "AscendumSolutions Settings",
+        "fields": [
+            {
+                "key": "field_65520d5a205ff",
+                "label": "Geographies",
+                "name": "geographies",
+                "type": "flexible_content",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layouts": {
+                    "layout_655229cee68ea": {
+                        "key": "layout_655229cee68ea",
+                        "name": "portugal",
+                        "label": "Portugal",
+                        "display": "table",
+                        "sub_fields": [
+                            {
+                                "key": "field_655229cee68eb",
+                                "label": "Business Areas",
+                                "name": "business_areas",
+                                "type": "taxonomy",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "taxonomy": "business_areas",
+                                "field_type": "checkbox",
+                                "add_term": 1,
+                                "save_terms": 0,
+                                "load_terms": 0,
+                                "return_format": "id",
+                                "multiple": 0,
+                                "allow_null": 0
+                            },
+                            {
+                                "key": "field_655229cee68ec",
+                                "label": "Brands",
+                                "name": "brands",
+                                "type": "taxonomy",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "taxonomy": "brands",
+                                "field_type": "checkbox",
+                                "add_term": 1,
+                                "save_terms": 0,
+                                "load_terms": 0,
+                                "return_format": "id",
+                                "multiple": 0,
+                                "allow_null": 0
+                            },
+                            {
+                                "key": "field_655229cee68ed",
+                                "label": "Services",
+                                "name": "services",
+                                "type": "taxonomy",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "taxonomy": "services",
+                                "field_type": "checkbox",
+                                "add_term": 1,
+                                "save_terms": 0,
+                                "load_terms": 0,
+                                "return_format": "id",
+                                "multiple": 0,
+                                "allow_null": 0
+                            }
+                        ],
+                        "min": "",
+                        "max": "1"
+                    },
+                    "65520d9b74bf3": {
+                        "key": "65520d9b74bf3",
+                        "name": "spain",
+                        "label": "Spain",
+                        "display": "table",
+                        "sub_fields": [
+                            {
+                                "key": "field_65520dd520600",
+                                "label": "Business Areas",
+                                "name": "business_areas",
+                                "type": "taxonomy",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "taxonomy": "business_areas",
+                                "field_type": "checkbox",
+                                "add_term": 1,
+                                "save_terms": 0,
+                                "load_terms": 0,
+                                "return_format": "id",
+                                "multiple": 0,
+                                "allow_null": 0
+                            },
+                            {
+                                "key": "field_655225c2e5647",
+                                "label": "Brands",
+                                "name": "brands",
+                                "type": "taxonomy",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "taxonomy": "brands",
+                                "field_type": "checkbox",
+                                "add_term": 1,
+                                "save_terms": 0,
+                                "load_terms": 0,
+                                "return_format": "id",
+                                "multiple": 0,
+                                "allow_null": 0
+                            },
+                            {
+                                "key": "field_655228733f465",
+                                "label": "Services",
+                                "name": "services",
+                                "type": "taxonomy",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "taxonomy": "services",
+                                "field_type": "checkbox",
+                                "add_term": 1,
+                                "save_terms": 0,
+                                "load_terms": 0,
+                                "return_format": "id",
+                                "multiple": 0,
+                                "allow_null": 0
+                            }
+                        ],
+                        "min": "",
+                        "max": "1"
+                    },
+                    "layout_65522f20ec236": {
+                        "key": "layout_65522f20ec236",
+                        "name": "usa",
+                        "label": "U.S.A.",
+                        "display": "table",
+                        "sub_fields": [
+                            {
+                                "key": "field_65522f20ec237",
+                                "label": "Business Areas",
+                                "name": "business_areas",
+                                "type": "taxonomy",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "taxonomy": "business_areas",
+                                "field_type": "checkbox",
+                                "add_term": 1,
+                                "save_terms": 0,
+                                "load_terms": 0,
+                                "return_format": "id",
+                                "multiple": 0,
+                                "allow_null": 0
+                            },
+                            {
+                                "key": "field_65522f20ec238",
+                                "label": "Brands",
+                                "name": "brands",
+                                "type": "taxonomy",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "taxonomy": "brands",
+                                "field_type": "checkbox",
+                                "add_term": 1,
+                                "save_terms": 0,
+                                "load_terms": 0,
+                                "return_format": "id",
+                                "multiple": 0,
+                                "allow_null": 0
+                            },
+                            {
+                                "key": "field_65522f20ec239",
+                                "label": "Services",
+                                "name": "services",
+                                "type": "taxonomy",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "taxonomy": "services",
+                                "field_type": "checkbox",
+                                "add_term": 1,
+                                "save_terms": 0,
+                                "load_terms": 0,
+                                "return_format": "id",
+                                "multiple": 0,
+                                "allow_null": 0
+                            }
+                        ],
+                        "min": "",
+                        "max": "1"
+                    },
+                    "layout_65522f4cec23a": {
+                        "key": "layout_65522f4cec23a",
+                        "name": "turkiye",
+                        "label": "Türkiye",
+                        "display": "table",
+                        "sub_fields": [
+                            {
+                                "key": "field_65522f4cec23b",
+                                "label": "Business Areas",
+                                "name": "business_areas",
+                                "type": "taxonomy",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "taxonomy": "business_areas",
+                                "field_type": "checkbox",
+                                "add_term": 1,
+                                "save_terms": 0,
+                                "load_terms": 0,
+                                "return_format": "id",
+                                "multiple": 0,
+                                "allow_null": 0
+                            },
+                            {
+                                "key": "field_65522f4cec23c",
+                                "label": "Brands",
+                                "name": "brands",
+                                "type": "taxonomy",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "taxonomy": "brands",
+                                "field_type": "checkbox",
+                                "add_term": 1,
+                                "save_terms": 0,
+                                "load_terms": 0,
+                                "return_format": "id",
+                                "multiple": 0,
+                                "allow_null": 0
+                            },
+                            {
+                                "key": "field_65522f4cec23d",
+                                "label": "Services",
+                                "name": "services",
+                                "type": "taxonomy",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "taxonomy": "services",
+                                "field_type": "checkbox",
+                                "add_term": 1,
+                                "save_terms": 0,
+                                "load_terms": 0,
+                                "return_format": "id",
+                                "multiple": 0,
+                                "allow_null": 0
+                            }
+                        ],
+                        "min": "",
+                        "max": "1"
+                    },
+                    "layout_65522f64ec23e": {
+                        "key": "layout_65522f64ec23e",
+                        "name": "mexico",
+                        "label": "Mexico",
+                        "display": "table",
+                        "sub_fields": [
+                            {
+                                "key": "field_65522f64ec23f",
+                                "label": "Business Areas",
+                                "name": "business_areas",
+                                "type": "taxonomy",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "taxonomy": "business_areas",
+                                "field_type": "checkbox",
+                                "add_term": 1,
+                                "save_terms": 0,
+                                "load_terms": 0,
+                                "return_format": "id",
+                                "multiple": 0,
+                                "allow_null": 0
+                            },
+                            {
+                                "key": "field_65522f64ec240",
+                                "label": "Brands",
+                                "name": "brands",
+                                "type": "taxonomy",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "taxonomy": "brands",
+                                "field_type": "checkbox",
+                                "add_term": 1,
+                                "save_terms": 0,
+                                "load_terms": 0,
+                                "return_format": "id",
+                                "multiple": 0,
+                                "allow_null": 0
+                            },
+                            {
+                                "key": "field_65522f64ec241",
+                                "label": "Services",
+                                "name": "services",
+                                "type": "taxonomy",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "taxonomy": "services",
+                                "field_type": "checkbox",
+                                "add_term": 1,
+                                "save_terms": 0,
+                                "load_terms": 0,
+                                "return_format": "id",
+                                "multiple": 0,
+                                "allow_null": 0
+                            }
+                        ],
+                        "min": "",
+                        "max": "1"
+                    },
+                    "layout_65522f79ec242": {
+                        "key": "layout_65522f79ec242",
+                        "name": "austria",
+                        "label": "Austria",
+                        "display": "table",
+                        "sub_fields": [
+                            {
+                                "key": "field_65522f79ec243",
+                                "label": "Business Areas",
+                                "name": "business_areas",
+                                "type": "taxonomy",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "taxonomy": "business_areas",
+                                "field_type": "checkbox",
+                                "add_term": 1,
+                                "save_terms": 0,
+                                "load_terms": 0,
+                                "return_format": "id",
+                                "multiple": 0,
+                                "allow_null": 0
+                            },
+                            {
+                                "key": "field_65522f79ec244",
+                                "label": "Brands",
+                                "name": "brands",
+                                "type": "taxonomy",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "taxonomy": "brands",
+                                "field_type": "checkbox",
+                                "add_term": 1,
+                                "save_terms": 0,
+                                "load_terms": 0,
+                                "return_format": "id",
+                                "multiple": 0,
+                                "allow_null": 0
+                            },
+                            {
+                                "key": "field_65522f79ec245",
+                                "label": "Services",
+                                "name": "services",
+                                "type": "taxonomy",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "taxonomy": "services",
+                                "field_type": "checkbox",
+                                "add_term": 1,
+                                "save_terms": 0,
+                                "load_terms": 0,
+                                "return_format": "id",
+                                "multiple": 0,
+                                "allow_null": 0
+                            }
+                        ],
+                        "min": "",
+                        "max": "1"
+                    },
+                    "layout_65536b1d82806": {
+                        "key": "layout_65536b1d82806",
+                        "name": "czechia",
+                        "label": "Czechia",
+                        "display": "table",
+                        "sub_fields": [
+                            {
+                                "key": "field_65536b1d82807",
+                                "label": "Business Areas",
+                                "name": "business_areas",
+                                "type": "taxonomy",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "taxonomy": "business_areas",
+                                "field_type": "checkbox",
+                                "add_term": 1,
+                                "save_terms": 0,
+                                "load_terms": 0,
+                                "return_format": "id",
+                                "multiple": 0,
+                                "allow_null": 0
+                            },
+                            {
+                                "key": "field_65536b1d82808",
+                                "label": "Brands",
+                                "name": "brands",
+                                "type": "taxonomy",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "taxonomy": "brands",
+                                "field_type": "checkbox",
+                                "add_term": 1,
+                                "save_terms": 0,
+                                "load_terms": 0,
+                                "return_format": "id",
+                                "multiple": 0,
+                                "allow_null": 0
+                            },
+                            {
+                                "key": "field_65536b1d82809",
+                                "label": "Services",
+                                "name": "services",
+                                "type": "taxonomy",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "taxonomy": "services",
+                                "field_type": "checkbox",
+                                "add_term": 1,
+                                "save_terms": 0,
+                                "load_terms": 0,
+                                "return_format": "id",
+                                "multiple": 0,
+                                "allow_null": 0
+                            }
+                        ],
+                        "min": "",
+                        "max": "1"
+                    },
+                    "layout_65536b368280a": {
+                        "key": "layout_65536b368280a",
+                        "name": "hungary",
+                        "label": "Hungary",
+                        "display": "table",
+                        "sub_fields": [
+                            {
+                                "key": "field_65536b368280b",
+                                "label": "Business Areas",
+                                "name": "business_areas",
+                                "type": "taxonomy",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "taxonomy": "business_areas",
+                                "field_type": "checkbox",
+                                "add_term": 1,
+                                "save_terms": 0,
+                                "load_terms": 0,
+                                "return_format": "id",
+                                "multiple": 0,
+                                "allow_null": 0
+                            },
+                            {
+                                "key": "field_65536b368280c",
+                                "label": "Brands",
+                                "name": "brands",
+                                "type": "taxonomy",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "taxonomy": "brands",
+                                "field_type": "checkbox",
+                                "add_term": 1,
+                                "save_terms": 0,
+                                "load_terms": 0,
+                                "return_format": "id",
+                                "multiple": 0,
+                                "allow_null": 0
+                            },
+                            {
+                                "key": "field_65536b368280d",
+                                "label": "Services",
+                                "name": "services",
+                                "type": "taxonomy",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "taxonomy": "services",
+                                "field_type": "checkbox",
+                                "add_term": 1,
+                                "save_terms": 0,
+                                "load_terms": 0,
+                                "return_format": "id",
+                                "multiple": 0,
+                                "allow_null": 0
+                            }
+                        ],
+                        "min": "",
+                        "max": "1"
+                    },
+                    "layout_65536b448280e": {
+                        "key": "layout_65536b448280e",
+                        "name": "coratia",
+                        "label": "Coratia",
+                        "display": "table",
+                        "sub_fields": [
+                            {
+                                "key": "field_65536b448280f",
+                                "label": "Business Areas",
+                                "name": "business_areas",
+                                "type": "taxonomy",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "taxonomy": "business_areas",
+                                "field_type": "checkbox",
+                                "add_term": 1,
+                                "save_terms": 0,
+                                "load_terms": 0,
+                                "return_format": "id",
+                                "multiple": 0,
+                                "allow_null": 0
+                            },
+                            {
+                                "key": "field_65536b4482810",
+                                "label": "Brands",
+                                "name": "brands",
+                                "type": "taxonomy",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "taxonomy": "brands",
+                                "field_type": "checkbox",
+                                "add_term": 1,
+                                "save_terms": 0,
+                                "load_terms": 0,
+                                "return_format": "id",
+                                "multiple": 0,
+                                "allow_null": 0
+                            },
+                            {
+                                "key": "field_65536b4482811",
+                                "label": "Services",
+                                "name": "services",
+                                "type": "taxonomy",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "taxonomy": "services",
+                                "field_type": "checkbox",
+                                "add_term": 1,
+                                "save_terms": 0,
+                                "load_terms": 0,
+                                "return_format": "id",
+                                "multiple": 0,
+                                "allow_null": 0
+                            }
+                        ],
+                        "min": "",
+                        "max": "1"
+                    },
+                    "layout_65536b6082812": {
+                        "key": "layout_65536b6082812",
+                        "name": "romania",
+                        "label": "Romania",
+                        "display": "table",
+                        "sub_fields": [
+                            {
+                                "key": "field_65536b6082813",
+                                "label": "Business Areas",
+                                "name": "business_areas",
+                                "type": "taxonomy",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "taxonomy": "business_areas",
+                                "field_type": "checkbox",
+                                "add_term": 1,
+                                "save_terms": 0,
+                                "load_terms": 0,
+                                "return_format": "id",
+                                "multiple": 0,
+                                "allow_null": 0
+                            },
+                            {
+                                "key": "field_65536b6082814",
+                                "label": "Brands",
+                                "name": "brands",
+                                "type": "taxonomy",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "taxonomy": "brands",
+                                "field_type": "checkbox",
+                                "add_term": 1,
+                                "save_terms": 0,
+                                "load_terms": 0,
+                                "return_format": "id",
+                                "multiple": 0,
+                                "allow_null": 0
+                            },
+                            {
+                                "key": "field_65536b6082815",
+                                "label": "Services",
+                                "name": "services",
+                                "type": "taxonomy",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "taxonomy": "services",
+                                "field_type": "checkbox",
+                                "add_term": 1,
+                                "save_terms": 0,
+                                "load_terms": 0,
+                                "return_format": "id",
+                                "multiple": 0,
+                                "allow_null": 0
+                            }
+                        ],
+                        "min": "",
+                        "max": "1"
+                    },
+                    "layout_65536b7082816": {
+                        "key": "layout_65536b7082816",
+                        "name": "slovakia",
+                        "label": "Slovakia",
+                        "display": "table",
+                        "sub_fields": [
+                            {
+                                "key": "field_65536b7082817",
+                                "label": "Business Areas",
+                                "name": "business_areas",
+                                "type": "taxonomy",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "taxonomy": "business_areas",
+                                "field_type": "checkbox",
+                                "add_term": 1,
+                                "save_terms": 0,
+                                "load_terms": 0,
+                                "return_format": "id",
+                                "multiple": 0,
+                                "allow_null": 0
+                            },
+                            {
+                                "key": "field_65536b7082818",
+                                "label": "Brands",
+                                "name": "brands",
+                                "type": "taxonomy",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "taxonomy": "brands",
+                                "field_type": "checkbox",
+                                "add_term": 1,
+                                "save_terms": 0,
+                                "load_terms": 0,
+                                "return_format": "id",
+                                "multiple": 0,
+                                "allow_null": 0
+                            },
+                            {
+                                "key": "field_65536b7082819",
+                                "label": "Services",
+                                "name": "services",
+                                "type": "taxonomy",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "taxonomy": "services",
+                                "field_type": "checkbox",
+                                "add_term": 1,
+                                "save_terms": 0,
+                                "load_terms": 0,
+                                "return_format": "id",
+                                "multiple": 0,
+                                "allow_null": 0
+                            }
+                        ],
+                        "min": "",
+                        "max": "1"
+                    }
+                },
+                "button_label": "Add new area",
+                "min": "",
+                "max": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_template",
+                    "operator": "==",
+                    "value": "template-ascendum-solutions.php"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    }
+]

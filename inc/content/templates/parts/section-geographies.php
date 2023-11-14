@@ -1,0 +1,35 @@
+<?php
+
+$geo_active = '';
+
+
+$geo_object = get_geo_object();
+
+?>
+
+
+<div class="reset-section">
+	<span class="reset-filters"><?php _e( 'Apagar filtros', 'globefarer' ); ?></span>
+</div>
+
+<!-- geographies -->
+<div class="line-section"></div>
+
+<div class="qodef-grid-item animating qodef-page-content-section qodef-col--12 geographies-section">
+	<div class="solution-selector-block__solutions solution-selector-block__solutions--all">
+		<div class="solution-selector-block__solutions-row solution-selector-block__solutions-row--not-relevant">
+			<div class="solution-selector-block__solutions-row-content">
+
+				<?php foreach ($geo_object as $geo => $geosvalue) { ?>
+						<div class="solution-selector-block__solutions-row-content--item geo-item <?php if ($geo == $geo_active) { echo 'selected'; } ?> " geo_id="<?php echo $geo; ?>" >						
+							<button type="button" aria-haspopup="dialog" >
+								<svg class="qodef-svg--plus qodef-menu-item-plus" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="8" height="8" viewBox="0 0 14 14"><path class="qodef-m-horizontal" d="M0,0H14V2H0Z" transform="translate(0 6)"></path><path class="qodef-m-vertical" d="M0,0H2V14H0Z" transform="translate(6)"></path></svg>
+								<?php echo $geo; ?>
+							</button>
+						</div>
+				<?php } ?>
+
+			</div>	
+		</div>
+	</div>
+</div>

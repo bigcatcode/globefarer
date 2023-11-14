@@ -9,7 +9,13 @@ do_action( 'globefarer_action_before_page_content_holder' );
 		globefarer_template_part( 'content', 'templates/parts/loop' );
 
 
-		globefarer_template_part( 'content', 'templates/parts/loop-solutions' );
+		globefarer_template_part( 'content', 'templates/parts/section-geographies' );
+
+		?>
+			<div class="loop-solutions">
+				<?php globefarer_template_part( 'content', 'templates/parts/loop-solutions' ); ?>
+			</div>
+		<?php
 
 		// Include page content sidebar
 		//globefarer_template_part( 'sidebar', 'templates/sidebar' );
