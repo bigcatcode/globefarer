@@ -32,6 +32,11 @@ $geo_object = get_geo_object();
 <div class="line-section"></div>
 
 <div class="qodef-grid-item animating qodef-page-content-section qodef-col--12 sec-business_areas">
+
+	<div class="labes_mobile">
+		<button type="button" aria-haspopup="dialog"><?php echo $tax_business_areas->labels->name; ?></button>
+	</div>
+
 	<div class="solution-selector-block__solutions solution-selector-block__solutions--all">
 		<div class="solution-selector-block__solutions-row solution-selector-block__solutions-row--not-relevant">
 			<div class="solution-selector-block__solutions-row-content">
@@ -72,6 +77,11 @@ $geo_object = get_geo_object();
 <div class="line-section"></div>
 
 <div class="qodef-grid-item animating qodef-page-content-section qodef-col--12 sec-brands">
+
+	<div class="labes_mobile">
+		<button type="button" aria-haspopup="dialog"><?php echo $tax_brands->labels->name; ?></button>
+	</div>
+
 	<div class="solution-selector-block__solutions solution-selector-block__solutions--all">
 		<div class="solution-selector-block__solutions-row solution-selector-block__solutions-row--not-relevant">
 			<div class="solution-selector-block__solutions-row-content">
@@ -112,6 +122,11 @@ $geo_object = get_geo_object();
 <div class="line-section"></div>
 
 <div class="qodef-grid-item animating qodef-page-content-section qodef-col--12 sec-services">
+
+	<div class="labes_mobile">
+		<button type="button" aria-haspopup="dialog"><?php echo $tax_services->labels->name; ?></button>
+	</div>
+					
 	<div class="solution-selector-block__solutions solution-selector-block__solutions--all">
 		<div class="solution-selector-block__solutions-row solution-selector-block__solutions-row--not-relevant">
 			<div class="solution-selector-block__solutions-row-content">

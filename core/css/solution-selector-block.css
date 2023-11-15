@@ -511,7 +511,33 @@
     padding: 0;
 }
 
+/*mobile*/
+
+.labes_mobile {
+    display: none;
+    text-align: center;
+}
+
+.elementor-kit-6 .labes_mobile button {
+    background-color: white;
+    color: #7b7b7b;
+    border: none;
+    padding: 11px;
+    font-size: 14px;
+    line-height: 23px;
+    transition: background-color .4s,color .4s,box-shadow .4s;
+    text-transform: uppercase;
+    font-weight: 600; 
+}
+
 @media (max-width: 1200px) {
+
+    .labes_mobile {
+        display: block;
+    }
+    .solution-selector-block__solutions-row-content--item.item-label {
+        display: none;
+    }
 
 }
 
