@@ -263,7 +263,7 @@
 .solution-selector-block__solutions-row-content--item>button:hover {
     box-shadow: 0 0 20px 0 rgba(0,0,0,.35)
 }
-.solution-selector-block__solutions-row-content--item.item-label>button:hover {
+.solution-selector-block__solutions-row-content--item>button:hover {
     box-shadow: none;
 }
 
@@ -278,14 +278,20 @@
 }
 
 .solution-selector-block__solutions-row--not-relevant .solution-selector-block__solutions-row-content--item>button {
-/*    background-color: #e5e5e5;*/
     background-color: white;
-     color: #7b7b7b;
+    color: #7b7b7b;
+}
+.solution-selector-block__solutions-row--not-relevant .solution-selector-block__solutions-row-content--item.item-label>button {
+    text-align: left;
+    color: black;
+    padding-left: 15px;
 }
 .geographies-section .solution-selector-block__solutions-row--not-relevant .solution-selector-block__solutions-row-content--item>button {
-
     background-color: black;
-     color: white;
+    color: white;
+    text-align: left;
+    font-weight: 500;
+    padding-left: 15px;    
 }
 
 .label-section.sec-business_areas .solution-selector-block__solutions-row--not-relevant .solution-selector-block__solutions-row-content--item>button {
@@ -448,7 +454,7 @@
         overflow: hidden;
         -webkit-transform: scale(.7);
         transform: scale(.7);
-        left: -100px
+        left: 0px;
     }
 
     to {
@@ -466,7 +472,7 @@
         overflow: hidden;
         -webkit-transform: scale(.7);
         transform: scale(.7);
-        left: -100px
+        left: 0px;
     }
 
     to {
