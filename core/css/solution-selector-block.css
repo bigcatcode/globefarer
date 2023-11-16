@@ -509,6 +509,9 @@
     text-transform: uppercase;
     font-weight: 600;
 }
+.reset-section span:hover {
+    cursor:pointer;
+}
 .geographies-section button svg {
     margin-right: 5px;
 }
@@ -525,8 +528,8 @@
 }
 
 .elementor-kit-6 .labes_mobile button {
-    background-color: white;
-    color: #7b7b7b;
+    background-color: transparent;
+    color: black;
     border: none;
     padding: 11px;
     font-size: 14px;
