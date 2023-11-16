@@ -304,7 +304,7 @@
 }
 
 .geographies-section .solution-selector-block__solutions-row--not-relevant .solution-selector-block__solutions-row-content--item.selected>button {
-    background-color: var( --e-global-color-primary );
+    background-color: #e31d1a;
     color: #0000009c;
 }
 
