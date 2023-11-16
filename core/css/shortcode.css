@@ -1,0 +1,3 @@
+.solution-selector-block__solutions-row--not-relevant .solution-selector-block__solutions-row-content--item.item-label>button {
+    background-color: transparent;
+}

@@ -13,6 +13,13 @@ function custom_child_scripts() {
 			rand()
 		);
 
+		wp_enqueue_style(
+			'shortcode-css', 
+			CORE_URL . '/css/shortcode.css',
+			array(),
+			rand()
+		);
+
 
 		wp_enqueue_script(
 		    'custom_core',
