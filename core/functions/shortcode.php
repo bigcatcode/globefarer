@@ -6,13 +6,16 @@ function ascendum_solutions_func( $atts ){
 	$html = '';
 	ob_start();
 
-
-		globefarer_template_part( 'content', 'templates/parts/section-geographies' );
-
 		?>
+
+			<div class="loop-geo">
+				<?php globefarer_template_part( 'content', 'templates/parts/section-geographies' ); ?>
+			</div>
+	
 			<div class="loop-solutions">
 				<?php globefarer_template_part( 'content', 'templates/parts/loop-solutions' ); ?>
 			</div>
+
 		<?php
 
 

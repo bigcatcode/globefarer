@@ -49,3 +49,77 @@ function get_geo_object( $page_template_id = 9430 ) {
 	return $geo_object;
 
 }
+
+function get_business_object( $geo_object ) {
+
+	$business_object = [];
+	$brands = [];
+	$services = [];
+
+	$terms_business_areas = get_terms( 'business_areas', [
+		'hide_empty' => false,
+	] );	
+	foreach ($terms_business_areas as $kkey => $terms_business_area) {
+		foreach ($geo_object  as $k => $geo_object_) {
+
+			if ( in_array($terms_business_area->term_id, $geo_object_['business_areas']) ) {
+
+				$business_object[$terms_business_area->term_id]['geo'][] = $k;
+
+				$brands = array_merge($brands,$geo_object_['brands']);
+				$services = array_merge($services,$geo_object_['services']);
+			}
+		}
+		$business_object[$terms_business_area->term_id]['brands'] = array_unique($brands);
+		$business_object[$terms_business_area->term_id]['services'] = array_unique($services);
+	}
+
+
+
+
+	return $business_object;
+
+}
+
+add_action( 'wp_ajax_get_term_by_business', 'get_term_by_business' );
+add_action( 'wp_ajax_nopriv_get_term_by_business', 'get_term_by_business' );
+
+function get_term_by_business() {
+
+	$business_object = $_POST['business_object'];
+
+
+	ob_start();
+
+		$template_args = array(
+		  'business_object'  => $business_object,
+		);
+
+		get_template_part( 'inc/content/templates/parts/section', 'geographies', $template_args );
+
+
+	$content = ob_get_contents();
+	ob_end_clean();
+
+	ob_start();
+
+		$template_args = array(
+		  'business_object'  => $business_object,
+		);
+
+		get_template_part( 'inc/content/templates/parts/loop', 'solutions', $template_args );
+
+	$content2 = ob_get_contents();
+	ob_end_clean();
+
+	$res['content'] = $content;
+	$res['content2'] = $content2;
+	$res['business_object'] = $business_object;
+	echo json_encode( $res );
+	exit;
+
+}
+
+
+
+

@@ -2,18 +2,31 @@
 
 $terms_business_areas = get_terms( 'business_areas', [
 	'hide_empty' => false,
+	'meta_key' => 'tax_position',
+	'orderby' => 'tax_position',
 ] );
 $tax_business_areas = get_taxonomy('business_areas');
 
 $terms_brands = get_terms( 'brands', [
 	'hide_empty' => false,
+	'meta_key' => 'tax_position',
+	'orderby' => 'tax_position',
 ] );
 $tax_brands = get_taxonomy('brands');
 
 $terms_services = get_terms( 'services', [
 	'hide_empty' => false,
+	'meta_key' => 'tax_position',
+	'orderby' => 'tax_position',
 ] );
 $tax_services = get_taxonomy('services');
+
+
+$geo_object = get_geo_object();
+//echo "<pre>", var_dump($geo_object), "</pre>";
+
+$business_object =  get_business_object( $geo_object );
+//echo "<pre>", var_dump($business_object), "</pre>";
 
 
 if ( isset($args['geo_id']) ) {
@@ -23,10 +36,15 @@ if ( isset($args['geo_id']) ) {
 }
 //var_dump($geo_active);
 
-$geo_object = get_geo_object();
-//echo "<pre>", var_dump($geo_object), "</pre>";
+
 
 ?>
+
+<script>
+
+	var business_object = JSON.parse(`<?php echo json_encode($business_object) ?>`);
+
+</script>
 
 <!-- business_areas -->
 <div class="line-section"></div>
@@ -62,7 +80,7 @@ $geo_object = get_geo_object();
 						}
 					?>
 
-					<div class="solution-selector-block__solutions-row-content--item <?php echo $sel; ?>">
+					<div class="solution-selector-block__solutions-row-content--item business_areas-item <?php echo $sel; ?>" business-id="<?php echo $terms_business_area->term_id; ?>">
 						<button type="button" aria-haspopup="dialog"><?php echo $terms_business_area->name; ?></button>
 					</div>
 
@@ -107,7 +125,7 @@ $geo_object = get_geo_object();
 						}
 					?>
 
-					<div class="solution-selector-block__solutions-row-content--item <?php echo $sel; ?>">
+					<div class="solution-selector-block__solutions-row-content--item brand-item <?php echo $sel; ?>" brand-id="<?php echo $terms_brand->term_id; ?>">
 						<button type="button" aria-haspopup="dialog"><?php echo $terms_brand->name; ?></button>
 					</div>
 
@@ -126,7 +144,7 @@ $geo_object = get_geo_object();
 	<div class="labes_mobile">
 		<button type="button" aria-haspopup="dialog"><?php echo $tax_services->labels->name; ?></button>
 	</div>
-					
+
 	<div class="solution-selector-block__solutions solution-selector-block__solutions--all">
 		<div class="solution-selector-block__solutions-row solution-selector-block__solutions-row--not-relevant">
 			<div class="solution-selector-block__solutions-row-content">
@@ -152,7 +170,7 @@ $geo_object = get_geo_object();
 						}
 					?>
 
-					<div class="solution-selector-block__solutions-row-content--item <?php echo $sel; ?>">
+					<div class="solution-selector-block__solutions-row-content--item service-item <?php echo $sel; ?>" services-id="<?php echo $terms_service->term_id; ?>">
 						<button type="button" aria-haspopup="dialog"><?php echo $terms_service->name; ?></button>
 					</div>
 

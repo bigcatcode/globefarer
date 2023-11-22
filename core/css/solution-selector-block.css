@@ -451,18 +451,10 @@
 @-webkit-keyframes buttonAppear {
     from {
         opacity: 0;
-        overflow: hidden;
-        -webkit-transform: scale(.7);
-        transform: scale(.7);
-        left: 0px;
     }
 
     to {
         opacity: 1;
-        overflow: initial;
-        -webkit-transform: scale(1);
-        transform: scale(1);
-        left: 0
     }
 }
 
