@@ -531,6 +531,10 @@
     font-weight: 600; 
 }
 
+.solution-selector-block__solutions-row--not-relevant .solution-selector-block__solutions-row-content--item>button {
+    background-color: transparent;
+}
+
 @media (max-width: 1200px) {
 
     .labes_mobile {

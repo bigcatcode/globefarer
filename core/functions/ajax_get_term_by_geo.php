@@ -56,6 +56,11 @@ function get_business_object( $geo_object ) {
 	$brands = [];
 	$services = [];
 
+	// $brands = get_terms( 'brands', [
+	// 	'hide_empty' => false,
+	// 	'fields' => 'ids',
+	// ] );
+
 	$terms_business_areas = get_terms( 'business_areas', [
 		'hide_empty' => false,
 	] );	
@@ -66,8 +71,10 @@ function get_business_object( $geo_object ) {
 
 				$business_object[$terms_business_area->term_id]['geo'][] = $k;
 
+				// $brands = array_intersect($brands,$geo_object_['brands']);
+				// $services = array_intersect($services,$geo_object_['services']);
 				$brands = array_merge($brands,$geo_object_['brands']);
-				$services = array_merge($services,$geo_object_['services']);
+				$services = array_merge($services,$geo_object_['services']);				
 			}
 		}
 		$business_object[$terms_business_area->term_id]['brands'] = array_unique($brands);

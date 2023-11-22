@@ -6,7 +6,11 @@
 	<div class="qodef-m-inner">
 		<?php
 		// Include module content template
-		echo apply_filters( 'globefarer_filter_title_content_template', globefarer_get_template_part( 'title', 'templates/title-content' ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+		if ( is_single() ) { 
+			echo apply_filters( 'globefarer_filter_title_content_template_custom', globefarer_get_template_part( 'title', 'templates/title-content-custom' ) ); 
+		} else {
+			echo apply_filters( 'globefarer_filter_title_content_template', globefarer_get_template_part( 'title', 'templates/title-content' ) ); 
+		}
 		?>
 	</div>
 	<?php

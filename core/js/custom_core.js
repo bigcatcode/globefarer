@@ -79,9 +79,9 @@ jQuery(document).ready(function($) {
 		    // console.log(key);
 		    // console.log(value);
 		});
-		// console.log( business_object[business_id]['geo'] );
-		// console.log( Object.values(business_object[business_id]['brands']) );
-		// console.log( business_object[business_id]['services'] );
+		console.log( business_object[business_id]['geo'] );
+		console.log( Object.values(business_object[business_id]['brands']) );
+		console.log( business_object[business_id]['services'] );
 
 		jQuery('.geo-item').removeClass('selected');
 		$('.geo-item').each(function(index, el) {

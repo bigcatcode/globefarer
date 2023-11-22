@@ -2,7 +2,7 @@
 	<div class="qodef-e-inner">
 		<?php
 		// Include post media
-		globefarer_template_part( 'blog', 'templates/parts/post-info/media' );
+		//globefarer_template_part( 'blog', 'templates/parts/post-info/media' );
 		?>
 		<div class="qodef-e-content">
 			<div class="qodef-e-top-holder">

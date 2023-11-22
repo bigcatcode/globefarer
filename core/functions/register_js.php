@@ -55,6 +55,20 @@ function custom_child_scripts() {
 	}
 
 
+		wp_enqueue_style(
+			'custom_all', 
+			CORE_URL . '/css/custom_all.css',
+			array(),
+			rand()
+		);
+
+		wp_enqueue_script(
+		    'custom_all',
+		    CORE_URL . '/js/custom_all.js',
+	        array('jquery'), 
+	        rand(),
+	        true  
+		);
 
 	
 	
