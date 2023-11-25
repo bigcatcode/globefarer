@@ -4,5 +4,25 @@
 }
 
 .qodef-page-title .qodef-m-content.custom-page-header {
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
 
+.qodef-page-title .qodef-m-content.custom-page-header img {
+	object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.header_overlay {
+  position: absolute;
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(83 192 236 / 41%);
+  z-index: 2;
 }
