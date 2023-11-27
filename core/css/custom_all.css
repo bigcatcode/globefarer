@@ -1,6 +1,7 @@
 
 .single .qodef-page-title {
-	height: 450px;
+	height: 530px;
+	margin-top: -80px;
 }
 
 .qodef-page-title .qodef-m-content.custom-page-header {
@@ -23,6 +24,19 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgb(83 192 236 / 41%);
+  background-color: rgb(17 87 116 / 58%);
   z-index: 2;
+}
+
+.qodef-header--standard-for-single #qodef-page-header {
+    background-color: rgba(255,255,255,0);
+}
+
+.qodef-header--standard-for-single #qodef-page-header-inner {
+    border-bottom-color: #ffffff80;
+    border-bottom-width: 1px;
+}
+
+.qodef-header--standard-for-single #qodef-page-header .qodef-widget-holder .widget::before {
+    background-color: #ffffff80;
 }
