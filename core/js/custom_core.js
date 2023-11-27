@@ -4,7 +4,7 @@ jQuery(document).ready(function($) {
 
 
 
-	$(document).on('click', '.geo-item', function(e) {
+	$(document).on('click', '.geo-item_', function(e) {
         
         e.preventDefault();
         //console.log(jQuery(this));
@@ -47,28 +47,31 @@ jQuery(document).ready(function($) {
         e.preventDefault();
 
         var geo_id = '';
-        $('.geo-item').removeClass('selected');
+        jQuery('.geo-item').removeClass('selected');
+        jQuery('.business_areas-item').removeClass('selected');
+        jQuery('.brand-item').removeClass('selected');
+        jQuery('.service-item').removeClass('selected');
 
-        $.ajax({
-                type    : "POST",
-                url     : js_url.ajaxurl,
-                dataType: "json",
-                data    : "action=get_term_by_geo&geo_id=" + geo_id,
-                success : function (a) {
-                    console.log(a);
+        // $.ajax({
+        //         type    : "POST",
+        //         url     : js_url.ajaxurl,
+        //         dataType: "json",
+        //         data    : "action=get_term_by_geo&geo_id=" + geo_id,
+        //         success : function (a) {
+        //             console.log(a);
 
-                    $('.loop-solutions').html(a.content).css({
-                        'opacity': '1'
-                    });
+        //             $('.loop-solutions').html(a.content).css({
+        //                 'opacity': '1'
+        //             });
 
 
-                }
-        }); //end ajax            
+        //         }
+        // }); //end ajax            
 
    });
 
 
-	$(document).on('click', '.business_areas-item button', function(e) {
+	$(document).on('click', '.business_areas-item_ button', function(e) {
 		e.preventDefault();
         var business_id = jQuery(this).parent().attr('business-id');
         //console.log(business_id);
@@ -134,6 +137,104 @@ jQuery(document).ready(function($) {
         // }); //end ajax  
 
 	});
+
+
+	$(document).on('click', '.business_areas-item button', function(e) {
+		e.preventDefault();
+        var business_id = jQuery(this).parent().attr('business-id');
+        //console.log(business_id);
+        jQuery('.business_areas-item').removeClass('selected');
+        jQuery(this).parent().addClass('selected');
+
+        jQuery('.brand-item').removeClass('selected');
+        jQuery('.service-item').removeClass('selected');
+
+        var geo_id_selected =$('.geo-item.selected').attr('geo_id');
+        
+        if(typeof(geo_id_selected)  != "undefined") {
+        	
+        	//console.log(geo_id_selected);
+        	//console.log(window["business_area_to_brand_"+business_id]);
+
+			$.each( window["business_area_to_brand_"+business_id], function(key, value) {
+			    
+			    if ( key == geo_id_selected ) {
+			    	//console.log(value['brands']);
+
+					
+					$('.brand-item').each(function(index, el) {
+						var brand_id = jQuery(el).attr('brand-id');
+						//console.log(Number(brand_id));
+						if ( jQuery.inArray( Number(brand_id) , value['brands'] ) !== -1 ) {
+							jQuery(el).addClass('selected');
+						}
+					});
+
+			    }
+			});
+
+
+		
+		$('.service-item').each(function(index, el) {
+			var services_id = jQuery(el).attr('services-id');
+			if ( jQuery.inArray( Number(services_id) , window["business_area_to_services_"+business_id] ) !== -1 ) {
+				jQuery(el).addClass('selected');
+			}
+
+		});
+
+			// $.each( window["business_area_to_services_"+business_id], function(key2, value2) {  
+			// 	console.log(key2);
+			// 	console.log(value2);
+			// });     
+
+
+
+        }
+
+    });
+
+
+	$(document).on('click', '.geo-item', function(e) {
+        
+        e.preventDefault();
+        //console.log(jQuery(this));
+        var geo_id = jQuery(this).attr('geo_id');
+        $('.geo-item').removeClass('selected');
+        $(this).addClass('selected');
+        jQuery('.brand-item').removeClass('selected');
+
+		$.each( geo_object, function(key, value) {  
+			if ( key == geo_id ) {
+				console.log(value['business_areas']);
+				console.log(value['brands']);
+				console.log(value['services']);
+
+				
+				$('.business_areas-item').each(function(index, el) {
+					var business_id = jQuery(el).attr('business-id');
+					if ( jQuery.inArray( Number(business_id) , value['business_areas'] ) !== -1 ) {
+						jQuery(el).addClass('selected');
+					}
+				});
+				$('.brand-item').each(function(index, el) {
+					var brand_id = jQuery(el).attr('brand-id');
+					if ( jQuery.inArray( Number(brand_id) , value['brands'] ) !== -1 ) {
+						jQuery(el).addClass('selected');
+					}
+				});
+				$('.service-item').each(function(index, el) {
+					var services_id = jQuery(el).attr('services-id');
+					if ( jQuery.inArray( Number(services_id) , value['services'] ) !== -1 ) {
+						jQuery(el).addClass('selected');
+					}
+
+				});
+
+			}
+		});            
+
+   });
 
 		
 }); 

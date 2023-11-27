@@ -2,22 +2,17 @@
 
 $terms_business_areas = get_terms( 'business_areas', [
 	'hide_empty' => false,
-	'meta_key' => 'tax_position',
-	'orderby' => 'tax_position',
 ] );
 $tax_business_areas = get_taxonomy('business_areas');
 
 $terms_brands = get_terms( 'brands', [
 	'hide_empty' => false,
-	'meta_key' => 'tax_position',
-	'orderby' => 'tax_position',
 ] );
+//echo "<pre>", var_dump($terms_brands), "</pre>";
 $tax_brands = get_taxonomy('brands');
 
 $terms_services = get_terms( 'services', [
 	'hide_empty' => false,
-	'meta_key' => 'tax_position',
-	'orderby' => 'tax_position',
 ] );
 $tax_services = get_taxonomy('services');
 
@@ -43,6 +38,7 @@ if ( isset($args['geo_id']) ) {
 <script>
 
 	var business_object = JSON.parse(`<?php echo json_encode($business_object) ?>`);
+	var geo_object = JSON.parse(`<?php echo json_encode($geo_object) ?>`);
 
 </script>
 
@@ -78,6 +74,27 @@ if ( isset($args['geo_id']) ) {
 						if ( !empty($geo_active) && in_array($terms_business_area->term_id, $geo_object[$geo_active]['business_areas']) ) {
 							$sel = 'selected';							 
 						}
+
+						$geo_logic = get_field( 'geographies' , 'business_areas_'.$terms_business_area->term_id );
+						$services_logic = get_field( 'services' , 'business_areas_'.$terms_business_area->term_id );
+						
+						$geo_logic_object = [];
+						if( have_rows('geographies', 'business_areas_'.$terms_business_area->term_id) ):
+					    	while( have_rows('geographies', 'business_areas_'.$terms_business_area->term_id) ): the_row(); 
+
+					        	$geo = get_row_layout('business_areas_'.$terms_business_area->term_id);
+								$brands = get_sub_field('brands' , 'business_areas_'.$terms_business_area->term_id ); 
+					            $geo_logic_object[$geo]['brands'] = $brands;
+					            
+						    endwhile;
+						endif;
+
+	 					?>
+							<script>
+								var business_area_to_brand_<?php echo $terms_business_area->term_id; ?> = JSON.parse(`<?php echo json_encode($geo_logic_object) ?>`);
+								var business_area_to_services_<?php echo $terms_business_area->term_id; ?> = JSON.parse(`<?php echo json_encode($services_logic) ?>`);
+							</script>
+						<?php 
 					?>
 
 					<div class="solution-selector-block__solutions-row-content--item business_areas-item <?php echo $sel; ?>" business-id="<?php echo $terms_business_area->term_id; ?>">
