@@ -16,7 +16,7 @@ if ( 'yes' === $is_enabled && ! empty( $related_posts ) && class_exists( 'GlobeF
 				'additional_params'    => 'id',
 				'post_ids'             => $related_posts['items'],
 				'title_tag'            => 'h4',
-				'excerpt_length'       => '80',
+				'excerpt_length'       => '160',
 				'button_text'          => esc_html__( 'Related News', 'globefarer-core' ),
 				'line_break_positions' => 2,
 				'layout'               => 'standard',

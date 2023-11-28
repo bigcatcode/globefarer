@@ -27,6 +27,6 @@ if ( is_singular( 'post' ) ) {
 	//do_action( 'globefarer_action_after_blog_post_item' );
 }
 
-//echo do_shortcode( '[globefarer_core_blog_list images_proportion="medium" posts_per_page="3" text_transform="none" button_text="Read more" pagination_type="no-pagination" enable_filter="no" behavior="columns" columns="3" columns_responsive="predefined" space="normal" orderby="rand" order="DESC" layout="standard" title_tag="h4" hover_animation="no" _transform_keep_proportions="yes" _transform_keep_proportions_hover="yes"]' );
+echo do_shortcode( '[globefarer_core_blog_list images_proportion="medium" posts_per_page="3" text_transform="none" button_text="Read more" pagination_type="no-pagination" enable_filter="no" behavior="columns" columns="3" columns_responsive="predefined" space="normal" orderby="rand" order="DESC" layout="standard" title_tag="h4" hover_animation="no" _transform_keep_proportions="yes" _transform_keep_proportions_hover="yes"]' );
 
 wp_reset_postdata();
