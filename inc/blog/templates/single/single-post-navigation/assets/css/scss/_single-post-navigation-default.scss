@@ -1,0 +1,148 @@
+/* ==========================================================================
+   Single Post Navigation styles
+   ========================================================================== */
+
+#qodef-single-post-navigation {
+	@include qodefRelativeLayout();
+
+	border-top: 1px solid $border-color-one;
+	margin: 79px 0 82px 0;
+	padding: 19px 0 0 0;
+
+	.qodef-m {
+
+		&-inner {
+			align-items: center;
+			display: flex;
+			justify-content: space-between;
+			position: relative;
+		}
+
+		&-nav {
+			align-items: center;
+			display: flex;
+			position: relative;
+			color: $heading-color;
+
+			> * {
+				display: block;
+				line-height: inherit;
+			}
+
+			.qodef-m-pagination-icon {
+				display: block;
+				height: auto;
+			}
+
+			&.qodef--prev {
+				left: 0;
+
+				.qodef-m-pagination-icon {
+					margin-right: 10px;
+					transition: margin-right .3s ease;
+					will-change: transform;
+					overflow: visible;
+
+					rect:nth-child(1) {
+						width: 22px;
+						height: 2px;
+						transition: width .3s ease;
+						will-change: transform;
+					}
+
+					rect:nth-child(2) {
+						width: 2px;
+						height: 22px;
+						transition: height .3s ease;
+						will-change: transform;
+					}
+
+					rect:nth-child(3) {
+						width: 2px;
+						height: 0px;
+						transition: height .3s ease;
+						will-change: transform;
+					}
+				}
+
+				&:hover {
+
+					.qodef-m-pagination-icon {
+						margin-right: 21px;
+
+						rect:nth-child(1) {
+							width: 12px;
+						}
+
+						rect:nth-child(2) {
+							height: 12px;
+						}
+
+						rect:nth-child(3) {
+							height: 20px;
+						}
+					}
+				}
+			}
+
+			&.qodef--next {
+				flex-direction: row-reverse;
+				margin-left: auto;
+				right: 0;
+				text-align: right;
+
+				.qodef-m-pagination-icon {
+					margin-left: 10px;
+					transform: rotate(180deg);
+					transition: margin-left .3s ease;
+					will-change: transform;
+					overflow: visible;
+
+					rect:nth-child(1) {
+						width: 22px;
+						height: 2px;
+						transition: width .3s ease;
+						will-change: transform;
+					}
+
+					rect:nth-child(2) {
+						width: 2px;
+						height: 22px;
+						transition: height .3s ease;
+						will-change: transform;
+					}
+
+					rect:nth-child(3) {
+						width: 2px;
+						height: 0px;
+						transition: height .3s ease;
+						will-change: transform;
+					}
+				}
+
+				&:hover {
+
+					.qodef-m-pagination-icon {
+						margin-left: 21px;
+
+						rect:nth-child(1) {
+							width: 12px;
+						}
+
+						rect:nth-child(2) {
+							height: 12px;
+						}
+
+						rect:nth-child(3) {
+							height: 20px;
+						}
+					}
+				}
+			}
+
+			&-label {
+				@include qodefHeadingStyle($heading: h5, $with-color: false);
+			}
+		}
+	}
+}

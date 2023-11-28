@@ -1,0 +1,31 @@
+/* ==========================================================================
+   Related Posts styles
+   ========================================================================== */
+
+#qodef-related-posts {
+	@include qodefRelativeLayout();
+
+	margin: 79px 0 81px 0;
+
+	h2 {
+		margin: 0 0 64px 0;
+	}
+
+	@include qodefScreenSize768 {
+		.qodef-blog {
+			article:first-child,
+			article:nth-child(2) {
+				margin: 0 0 80px;
+			}
+		}
+	}
+
+	@include qodefScreenSize480 {
+		.qodef-blog {
+			article:first-child,
+			article:nth-child(2) {
+				margin: 0 0 40px;
+			}
+		}
+	}
+}
