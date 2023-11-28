@@ -49,6 +49,7 @@ jQuery(document).ready(function($) {
         var geo_id = '';
         jQuery('.geo-item').removeClass('selected');
         jQuery('.business_areas-item').removeClass('selected');
+        jQuery('.business_areas-item').removeClass('logic-selected');
         jQuery('.brand-item').removeClass('selected');
         jQuery('.service-item').removeClass('selected');
 
@@ -136,10 +137,10 @@ jQuery(document).ready(function($) {
         //         }
         // }); //end ajax  
 
-	});
+	}); 
 
 
-	$(document).on('click', '.business_areas-item button', function(e) {
+	$(document).on('click', '.business_areas-item.logic-selected button', function(e) {
 		e.preventDefault();
         var business_id = jQuery(this).parent().attr('business-id');
         //console.log(business_id);
@@ -202,7 +203,12 @@ jQuery(document).ready(function($) {
         var geo_id = jQuery(this).attr('geo_id');
         $('.geo-item').removeClass('selected');
         $(this).addClass('selected');
+
+
+        jQuery('.business_areas-item').removeClass('selected');
+        jQuery('.business_areas-item').removeClass('logic-selected');
         jQuery('.brand-item').removeClass('selected');
+        jQuery('.service-item').removeClass('selected');
 
 		$.each( geo_object, function(key, value) {  
 			if ( key == geo_id ) {
@@ -215,6 +221,7 @@ jQuery(document).ready(function($) {
 					var business_id = jQuery(el).attr('business-id');
 					if ( jQuery.inArray( Number(business_id) , value['business_areas'] ) !== -1 ) {
 						jQuery(el).addClass('selected');
+						jQuery(el).addClass('logic-selected');
 					}
 				});
 				$('.brand-item').each(function(index, el) {

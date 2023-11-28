@@ -534,7 +534,9 @@
 .solution-selector-block__solutions-row--not-relevant .solution-selector-block__solutions-row-content--item>button {
     background-color: transparent;
 }
-
+.logic-selected {
+        border: 1px solid #ccc;
+}
 @media (max-width: 1200px) {
 
     .labes_mobile {

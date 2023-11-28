@@ -19,7 +19,7 @@ if ( isset($args['business_object']) ) {
 
 
 <div class="reset-section">
-	<span class="reset-filters"><?php _e( 'Apagar filtros', 'globefarer' ); ?></span>
+	<span class="reset-filters"><?php _e( 'RESET FILTERS', 'globefarer' ); ?></span>
 </div>
 
 <!-- geographies -->
