@@ -302,6 +302,10 @@
     background-color: #808080;
     color: #0000009c;
 }
+.sec-business_areas .solution-selector-block__solutions-row--not-relevant .solution-selector-block__solutions-row-content--item.selected.selected-current>button {
+    color: #0000009c;
+    background-color: #e31d1a;
+}
 
 .geographies-section .solution-selector-block__solutions-row--not-relevant .solution-selector-block__solutions-row-content--item.selected>button {
     background-color: #e31d1a;

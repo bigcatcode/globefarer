@@ -50,6 +50,7 @@ jQuery(document).ready(function($) {
         jQuery('.geo-item').removeClass('selected');
         jQuery('.business_areas-item').removeClass('selected');
         jQuery('.business_areas-item').removeClass('logic-selected');
+        jQuery('.business_areas-item').removeClass('selected-current');
         jQuery('.brand-item').removeClass('selected');
         jQuery('.service-item').removeClass('selected');
 
@@ -144,8 +145,9 @@ jQuery(document).ready(function($) {
 		e.preventDefault();
         var business_id = jQuery(this).parent().attr('business-id');
         //console.log(business_id);
-        jQuery('.business_areas-item').removeClass('selected');
+        jQuery('.business_areas-item').removeClass('selected-current');
         jQuery(this).parent().addClass('selected');
+        jQuery(this).parent().addClass('selected-current');
 
         jQuery('.brand-item').removeClass('selected');
         jQuery('.service-item').removeClass('selected');
@@ -207,6 +209,7 @@ jQuery(document).ready(function($) {
 
         jQuery('.business_areas-item').removeClass('selected');
         jQuery('.business_areas-item').removeClass('logic-selected');
+        jQuery('.business_areas-item').removeClass('selected-current');
         jQuery('.brand-item').removeClass('selected');
         jQuery('.service-item').removeClass('selected');
 
