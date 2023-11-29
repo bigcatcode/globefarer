@@ -1,4 +1,6 @@
 
+/*header*/
+
 .single .qodef-page-title {
 	height: 530px;
 	margin-top: -80px;
@@ -40,3 +42,17 @@
 .qodef-header--standard-for-single #qodef-page-header .qodef-widget-holder .widget::before {
     background-color: #ffffff80;
 }
+
+/*news*/
+
+.qodef-blog .qodef-blog-item .qodef-e-title {
+    min-height: 78px;
+}
+.qodef-blog .qodef-blog-item .qodef-e-excerpt {
+	/*    min-height: 130px;*/
+	min-height: 104px;
+}
+
+
+
+
