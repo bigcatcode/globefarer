@@ -53,6 +53,15 @@
 	min-height: 104px;
 }
 
+.qodef-blog.qodef-item-layout--info-on-image article .qodef-e-content.qodef--initial {
+    justify-content: flex-start;
+}
+.qodef-blog.qodef-item-layout--info-on-image article .qodef-e-content.qodef--initial .qodef-e-title {
+    color: black;
+}
+.qodef-blog.qodef-item-layout--info-on-image article .qodef-e-content.qodef--initial a {
+    color: black;
+}
 
 
 
