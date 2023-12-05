@@ -3,6 +3,20 @@
 // Hook to include additional content before blog post item
 do_action( 'globefarer_action_before_blog_post_item' );
 
+if ( is_singular( 'post' )  && is_single() ) { ?>
+
+	<a href="<?php echo home_url( '/news/' ); ?>" class="back-to-news">
+		<span class="back-to-news-icon">
+			<svg class="qodef-svg--back-to-top" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24.042" height="26.433" viewBox="0 0 24.042 26.433">
+				<g transform="translate(-1740.938 -900.216)">
+					<g class="qodef-m-hover"><rect width="16" height="2" transform="translate(1754.373 901.63) rotate(135)"></rect><rect width="24" height="2" transform="translate(1753.958 902.649) rotate(90)"></rect><rect width="16" height="2" transform="translate(1752.958 900.216) rotate(45)"></rect></g>
+				</g>
+			</svg>	
+		</span>
+	</a>
+<?php
+}
+
 if ( have_posts() ) {
 	while ( have_posts() ) :
 		the_post();

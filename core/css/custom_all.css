@@ -63,5 +63,17 @@
     color: black;
 }
 
+/*back-to-news*/
 
+.back-to-news {
+	margin-top: -40px;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+.back-to-news-icon {
 
+}
+.back-to-news-icon svg {
+	transform: rotate(-90deg);
+/*	fill: #e31d1a;*/
+}
